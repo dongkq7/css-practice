@@ -1,0 +1,18 @@
+body, h2, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  /* 防止默认情况下是基线对齐而导致的底部多出来像素 */
+  vertical-align: top;
+}
+
+ul, ol, li {
+  list-style: none;
+}
