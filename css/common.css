@@ -1,3 +1,9 @@
+body {
+  font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+  color: #333;
+}
+
+/** 版心相关 **/
 .top_wrapper {
   width: 980px;
   margin:0 auto;
@@ -5,4 +11,46 @@
 .header_wrapper {
   width: 1300px;
   margin: 0 auto;
+}
+.main_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 一行省略 */
+.one_line {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.news_tag::before {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  margin-right: 2px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #f00;
+  border: 1px solid #f00;
+  border-radius: 2px;
+}
+.news_tag_hot::before {
+  content: "热门";
+}
+.news_tag_news::before {
+  content: "新闻";
+  color: #1e96ab;
+  border-color: #1e96ab;
+}
+.news_tag_notice::before{
+  content: "公告";
+  color: #f3c258;
+  border-color: #f3c258;
+}
+.news_tag_game::before{
+  content: "赛事";
+  color: #4d9cff;
+  border-color:#4d9cff;
 }

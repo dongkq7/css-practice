@@ -51,7 +51,7 @@
 
     .content .left .left-nav .item:hover,
     .content .left .left-nav .item.active {
-      background: url(./img/main_sprite.png) no-repeat 0 0;
+      background: url(../img/main_sprite.png) no-repeat 0 0;
     }
 
     .content .left .left-nav .item :hover a,
@@ -98,6 +98,7 @@
       border: 1px solid #d9ad50;
       border-radius: 50%;
     }
+    /* a元素不会使用继承来的color，所以不要试图通过CSS继承性改变a元素内容的color */
     .content .right .right-info {
       margin-left: 12px;
     }

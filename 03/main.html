@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <style>
+    .main .area {
+      display: flex;
+      height: 342px;
+      background: url(./img/news_bg.png) no-repeat;
+    }
+    /**********banner area************/
+    .main .area .banner-area {
+      width: 604px;
+    }
+    .main .area .banner-area .banner-list {
+      display: flex;
+      overflow: hidden;
+    }
+    .main .area .banner-area .banner-btns {
+      display: flex;
+      height: 44px;
+      line-height: 44px;
+    }
+    .main .area .banner-area .banner-btns .item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .main .area .banner-area .banner-btns .item  a {
+      color:  #b1b2be;
+    }
+    .main .area .banner-area .banner-btns .item a:hover {
+      color: #f3c258;
+    }
+    .main .area .banner-area .banner-btns .item.active a {
+      color: #f3c258;
+    }
+    /**********banner area************/
+    .main .area .news-area {
+      width: 359px;
+      box-sizing: border-box;
+      padding: 0 17px;
+    }
+
+    .main .area .news-area .news-type {
+      display: flex;
+      height: 48px;
+      border-bottom: 1px solid #000;
+    }
+
+    .main .area .news-area .news-type .item {
+      width: 52px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .main .area .news-area .news-type .item a {
+      display: block;
+      height: 100%;
+      line-height: 45px;
+      box-sizing: border-box;
+      color: #b8b5c9;
+      transition: border 200ms ease-in;
+    }
+    .main .area .news-area .news-type .item.active a,
+    .main .area .news-area .news-type .item:not(.more) a:hover {
+      color:  #f3c258;
+      border-bottom: 3px solid #f3c258;
+    }
+    .main .area .news-area .news-title {
+      height: 36px;
+      line-height: 36px;
+      padding: 0 15px;
+      margin: 18px 0 11px;
+      background: #414046;
+    }
+    .main .area .news-area .news-title a {
+      display: block;
+      max-width: 230px;
+      height: 36px;
+      color: #f3c258;
+      font-size: 18px;
+      color: #f3c258;
+    }
+    .main .area .news-area .news-list .item {
+      display: flex;
+      align-items: center;
+      height: 21px;
+      margin-bottom: 11px;
+    }
+    .main .area .news-area .news-list .item .news-time {
+      padding: 0 8px;
+      color: #999;
+      font-size: 12px;
+    }
+    .main .area .news-area .news-list .item .news-desc{
+      flex: 1;
+      font-size: 14px;
+      color: #b8b9c5;
+    }
+    /**********news area************/
+
+    /**********operate area************/
+    .main .area .operate-area {
+      width: 236px;
+    }
+    .main .area .operate-area a {
+      display: block;
+      background: url(../img/main_sprite.png) no-repeat;
+    }
+    .main .area .operate-area .download {
+      height: 128px;
+      background-position: 0 -219px;
+    }
+    .main .area .operate-area .guard {
+      height: 106px;
+      background-position: 0 -350px;
+    }
+
+    .main .area .operate-area .experience{
+      height: 108px;
+      background-position: 0 -461px;
+    }
+    /**********operate area************/
+  </style>
+</head>
+<body>
+  <!-- a元素不加href属性会没有cursor:pointer状态 -->
+  <div class="main main_wrapper">
+    <div class="area">
+      <div class="banner-area">
+        <ul class="banner-list">
+          <li class="item">
+            <a href="#">
+              <img src="./img/banner.jpeg" alt="武则天">
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img src="./img/banner.jpeg" alt="武则天">
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img src="./img/banner.jpeg" alt="武则天">
+            </a>
+          </li>
+        </ul>
+        <ul class="banner-btns">
+          <li class="item active">
+            <a href="#">璀璨新程皮肤</a>
+          </li>
+          <li class="item">
+            <a href="#">皮肤设计灵感大片</a>
+          </li>
+          <li class="item">
+            <a href="#">亚连英雄故事</a>
+          </li>
+          <li class="item">
+            <a href="#">英雄练习场更新</a>
+          </li>
+          <li class="item">
+            <a href="#">荣耀大话王</a>
+          </li>
+        </ul>
+      </div>
+      <div class="news-area">
+        <ul class="news-type">
+          <li class="item">
+            <a href="#">热门</a>
+          </li>
+          <li class="item">
+            <a href="#">新闻</a>
+          </li>
+          <li class="item">
+            <a href="#">公告</a>
+          </li>
+          <li class="item active">
+            <a href="#">活动</a>
+          </li>
+          <li class="item">
+            <a href="#">赛事</a>
+          </li>
+          <li class="item more">
+            <a href="#">...</a>
+          </li>
+        </ul>
+        <div class="news-title">
+          <a class="title one_line" href="#">大乔星梦星元技能特效研究讨论开启</a>
+        </div>
+        <ul class="news-list">
+          <li class="item">
+            <span class="news-desc one_line news_tag news_tag_hot">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+            <span class="news-time">07/19</span>
+          </li>
+          <li class="item">
+            <span class="news-desc one_line news_tag news_tag_notice">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+            <span class="news-time">07/19</span>
+          </li>
+          <li class="item">
+            <span class="news-desc one_line news_tag news_tag_news">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+            <span class="news-time">07/19</span>
+          </li>
+          <li class="item">
+            <span class="news-desc one_line news_tag news_tag_game">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+            <span class="news-time">07/19</span>
+          </li>
+          <li class="item">
+            <span class="news-desc one_line news_tag news_tag_game">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+            <span class="news-time">07/19</span>
+          </li>
+          <li class="item">
+            <span class="news-desc one_line news_tag news_tag_news">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+            <span class="news-time">07/19</span>
+          </li>
+          <li class="item">
+            <span class="news-desc one_line news_tag news_tag_hot">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+            <span class="news-time">07/19</span>
+          </li>
+        </ul>
+      </div>
+      <div class="operate-area">
+        <a href="#" class="download"></a>
+        <a href="#" class="guard"></a>
+        <a href="#" class="experience"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
