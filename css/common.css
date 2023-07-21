@@ -104,6 +104,12 @@ body {
   border-bottom: 3px solid transparent;
 }
 
+.tab_control .tab_control_item.item_wrap {
+  /* 让宽度包裹内容 */
+  flex: 0 auto;
+  padding: 0 27px;
+}
+
 .tab_control .tab_control_item:hover, 
 .tab_control .tab_control_item.active {
   color: #333;
@@ -142,3 +148,16 @@ body {
   border-color: #f3c258;
 }
 /**key_words**/
+
+.news_type_match {
+  display: inline-block;
+  width: 52px;
+  height: 23px;
+  margin-right: 12px;
+  border-radius: 10px;
+  line-height: 23px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  background-color: #e3e3e3;
+}

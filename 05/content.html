@@ -20,6 +20,55 @@
       width: 295px;
       height: 100px;
     }
+
+    .match-news {
+      display: flex;
+      height: 260px;
+      margin: 20px 0 15px;
+    }
+
+    .match-news .news-left {
+      width: 211px;
+      background-color: orange;
+    }
+
+    .match-news .news-right {
+      flex: 1;
+      overflow: hidden;
+      padding: 0 15px;
+    }
+
+    .news-right .title {
+      font-size: 24px;
+      color: #333;
+      padding-right: 80px;
+    }
+
+    .news-right .subtitle {
+      padding-right: 160px;
+      color: #666;
+    }
+
+    .news-right .news-list .item {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .news-right .news-list .item .desc {
+      flex: 1;
+      padding-right: 50px;
+    }
+
+    .news-right .news-list .item .desc:hover {
+      text-decoration: underline;
+    }
+
+    .news-right .news-list .item .date {
+      font-size: 12px;
+      color: #b8b9c5;
+    }
+
   </style>
 </head>
 <body>
@@ -186,6 +235,201 @@
           <div class="header_right">
             <a href="#" class="more">更多</a>
           </div>
+        </div>
+
+        <div class="tab_control">
+          <div class="tab_control_item item_wrap">KPL</div>
+          <div class="tab_control_line "></div>
+          <div class="tab_control_item item_wrap">世界冠军杯</div>
+          <div class="tab_control_line"></div>
+          <div class="tab_control_item item_wrap active">挑战者杯</div>
+          <div class="tab_control_line"></div>
+          <div class="tab_control_item item_wrap">K甲联赛</div>
+          <div class="tab_control_line"></div>
+          <div class="tab_control_item item_wrap">全国大赛</div>
+          <div class="tab_control_line"></div>
+          <div class="tab_control_item item_wrap">高校联赛</div>
+        </div>
+
+        <div class="match-news">
+          <a class="news-left" href="#">
+            <img src="./img/match_01.jpg" alt="">
+          </a>
+          <div class="news-right">
+            <div class="title one_line">
+              K甲季后赛回顾：镇江VTG、火豹会师总决赛，MD止步四强总决赛，MD止步四强
+            </div>
+            <div class="subtitle one_line">
+              2022年K甲春季赛季后赛为期一周的比赛已经全部结束了：新秀MD位居四强；老牌劲旅CW斩获季军，镇江VTG和火豹冲进总决赛。一起来回顾下本周的精彩比赛吧！
+            </div>
+            <ul class="news-list">
+              <li class="item">
+                <span class="news_type_match">KPL</span>
+                <a class="desc one_line" href="#">
+                  2022年K甲春季赛季后赛为期一周的比赛已经全部结束了：新秀MD位居四强；老牌劲旅CW斩获季军，镇江VTG和火豹冲进总决赛。一起来回顾下本周的精彩比赛吧！
+                </a>
+                <span class="date">04-22</span>
+              </li>
+              <li class="item">
+                <span class="news_type_match">KPL</span>
+                <a class="desc one_line" href="#">
+                  2022年K甲春季赛季后赛为期一周的比赛已经全部结束了：新秀MD位居四强；老牌劲旅CW斩获季军，镇江VTG和火豹冲进总决赛。一起来回顾下本周的精彩比赛吧！
+                </a>
+                <span class="date">04-22</span>
+              </li>
+              <li class="item">
+                <span class="news_type_match">KPL</span>
+                <a class="desc one_line" href="#">
+                  2022年K甲春季赛季后赛为期一周的比赛已经全部结束了：新秀MD位居四强；老牌劲旅CW斩获季军，镇江VTG和火豹冲进总决赛。一起来回顾下本周的精彩比赛吧！
+                </a>
+                <span class="date">04-22</span>
+              </li>
+              <li class="item">
+                <span class="news_type_match">KPL</span>
+                <a class="desc one_line" href="#">
+                  2022年K甲春季赛季后赛为期一周的比赛已经全部结束了：新秀MD位居四强；老牌劲旅CW斩获季军，镇江VTG和火豹冲进总决赛。一起来回顾下本周的精彩比赛吧！
+                </a>
+                <span class="date">04-22</span>
+              </li>
+              <li class="item">
+                <span class="news_type_match">KPL</span>
+                <a class="desc one_line" href="#">
+                  2022年K甲春季赛季后赛为期一周的比赛已经全部结束了：新秀MD位居四强；老牌劲旅CW斩获季军，镇江VTG和火豹冲进总决赛。一起来回顾下本周的精彩比赛吧！
+                </a>
+                <span class="date">04-22</span>
+              </li>
+              <li class="item">
+                <span class="news_type_match">KPL</span>
+                <a class="desc one_line" href="#">
+                  2022年K甲春季赛季后赛为期一周的比赛已经全部结束了：新秀MD位居四强；老牌劲旅CW斩获季军，镇江VTG和火豹冲进总决赛。一起来回顾下本周的精彩比赛吧！
+                </a>
+                <span class="date">04-22</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="video_list">
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
+          <a class="video_item" href="#">
+            <div class="album">
+              <img src="./img/video_album2.jpeg" alt="">
+              <div class="info">
+                <span class="count">471.6万</span>
+                <span class="date">2023-07-20</span>
+              </div>
+              <div class="cover">
+                <i class="icon_play"></i>
+              </div>
+            </div>
+            <div class="desc">
+              英雄玩法介绍——姬小满：招式随心！天才武道少女独家招式揭秘~hahahahahah
+            </div>
+          </a>
         </div>
       </div>
     </div>
