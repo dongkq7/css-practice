@@ -1,0 +1,16 @@
+@keyframes opacityAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heightAnim {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}

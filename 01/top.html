@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/animation.css">
   <style>
     .top {
       border-bottom: 1px solid #f5f5f5;
@@ -23,11 +24,28 @@
     }
     /* logo展示区域是个图片，但是我们可以结合h标签包裹a元素的+text-indent隐藏文字，再给a元素添加背景图的方式实现（这样比较有利于SEO的优化） */
     .content-left .logo a{
+      position:relative;
       /*  display最好为block，因为如果设置为inline-block很有可能由于vertical-align为baseline而底部多出来一些像素 */
       display: block;
       width: 150px;
       background: url(./img/top_logo.png) no-repeat center center;
       text-indent: -9999px;
+      z-index: 11;
+    }
+    .content-left .recommend {
+      position: relative;
+    }
+
+    .content-left .recommend:hover .recommend-ad {
+      display: block;
+    }
+
+    .content-left .recommend .recommend-ad {
+      display: none;
+      position: absolute;
+      left: -150px;
+      top: 0;
+      z-index: 10;
     }
     .content-right {
       display: flex;
@@ -53,7 +71,7 @@
       margin: auto 0;
       background: url(./img/top_sprite.png) no-repeat -30px 0;
     }
-    .content-right .ranking::after {
+    .content-right a.ranking::after {
       content: "";
       position: absolute;
       width: 30px;
@@ -66,6 +84,24 @@
       opacity: 0.2;
       transform: rotate(90deg);
     }
+
+    .content-right .item a.ranking .dropdown {
+      position: absolute;
+      right: 0;
+      top: 41px;
+    }
+
+    .content-right .item a.ranking .dropdown iframe {
+      display: none;
+      width: 1030px;
+      height: 700px
+    }
+
+    .content-right .item a.ranking:hover .dropdown iframe{
+      display: block;
+      animation: opacityAnim 400ms ease forwards;
+    }
+
   </style>
 </head>
 <body>
@@ -77,12 +113,22 @@
         </h2>
         <div class="recommend">
           <img src="./img/recommend_game.jpg"/>
+          <a class="recommend-ad" href="https://lpl.qq.com/es/toc3/">
+            <img src="./img/recommend_ad.jpg" alt="">
+          </a>
         </div>
         <img />
       </div>
       <ul class="content-right">
         <li class="item growth">成长守护平台</li>
-        <li class="item ranking">腾讯游戏排行榜</li>
+        <li class="item">
+          <a class="ranking" href="#">
+            游戏排行榜
+            <div class="dropdown">
+              <iframe src="https://game.gtimg.cn/images/js/title/title_game_rank.html" frameborder="0"></iframe>
+            </div>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
